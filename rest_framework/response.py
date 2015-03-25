@@ -6,6 +6,7 @@ The appropriate renderer is called during Django's template response rendering.
 """
 from __future__ import unicode_literals
 import django
+from django.utils.six.moves.http_client import responses
 from django.template.response import SimpleTemplateResponse
 from django.utils import six
 from rest_framework.compat import responses
